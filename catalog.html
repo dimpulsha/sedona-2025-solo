@@ -33,7 +33,10 @@
                     <a href="#"><span class="visually-hidden">Поиск</span></a>
                 </li>
                 <li>
-                    <a href="#"><span class="visually-hidden">Избранное</span></a>
+                  <a href="#">
+                    <span class="visually-hidden">Избранное</span>
+                    <span class="icon-button-counter">12</span>
+                  </a>
                 </li>
                 <li>
                     <a href="#"><span class="visually-hidden">Хочу сюда</span></a>
@@ -145,9 +148,21 @@
                 <button class="visually-hidden" type="submit">Сортировать</button>
             </form>
             <div class="view-toggler">
-                <a class="button button--view-card" href="#"><span class="visually-hidden">Показать в виде карточек</span></a>
-                <a class="button button--view-full" href="#"><span class="visually-hidden">Показать расширенную информацию</span></a>
-                <a class="button button--view-list" href="#"><span class="visually-hidden">Показать в виде списка</span></a>
+              <ul>
+                <li>
+                  <a class="button button--view-card" href="#"><span class="visually-hidden">Показать в виде карточек</span></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a class="button button--view-full" href="#"><span class="visually-hidden">Показать расширенную информацию</span></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a class="button button--view-list" href="#"><span class="visually-hidden">Показать в виде списка</span></a>
+                </li>
+              </ul>
             </div>
             <section class="hotel-list">
                 <div class="hotel-card">
@@ -164,7 +179,9 @@
                         <button class="button hotel-card__button" type="button">В избранное</button>
                     </div>
                     <div class="hotel-card__rate">
-                        <div class="hotel-card__stars"></div>
+                        <div class="hotel-card__stars">
+                          <p class="visually-hidden">4 звезды</p>
+                        </div>
                         <div class="hotel-card__rate-value">
                             <p class="hotel-card__rate-text">Рейтинг: <span>8,5</span></p>
                         </div>
@@ -181,10 +198,12 @@
                     </div>
                     <div class="hotel-card__control">
                         <a class="button hotel-card__button" href="">Подробнее</a>
-                        <button class="button hotel-card__button" type="button">В избранное</button>
+                        <a class="button hotel-card__button" href="#">В избранное</a>
                     </div>
                     <div class="hotel-card__rate">
-                        <div class="hotel-card__stars"></div>
+                        <div class="hotel-card__stars">
+                          <p class="visually-hidden">4 звезды</p>
+                        </div>
                         <div class="hotel-card__rate-value">
                             <p class="hotel-card__rate-text">Рейтинг: <span>8,9</span></p>
                         </div>
@@ -201,10 +220,12 @@
                     </div>
                     <div class="hotel-card__control">
                         <a class="button hotel-card__button" href="">Подробнее</a>
-                        <button class="button hotel-card__button" type="button">В избранное</button>
+                        <a class="button hotel-card__button" href="#">В избранное</a>
                     </div>
                     <div class="hotel-card__rate">
-                        <div class="hotel-card__stars"></div>
+                        <div class="hotel-card__stars">
+                          <p class="visually-hidden">4 звезды</p>
+                        </div>
                         <div class="hotel-card__rate-value">
                             <p class="hotel-card__rate-text">Рейтинг: <span>9,2</span></p>
                         </div>
@@ -221,10 +242,12 @@
                     </div>
                     <div class="hotel-card__control">
                         <a class="button hotel-card__button" href="">Подробнее</a>
-                        <button class="button hotel-card__button" type="button">В избранное</button>
+                        <a class="button hotel-card__button" href="#">В избранное</a>
                     </div>
                     <div class="hotel-card__rate">
-                        <div class="hotel-card__stars"></div>
+                        <div class="hotel-card__stars">
+                          <p class="visually-hidden">4 звезды</p>
+                        </div>
                         <div class="hotel-card__rate-value">
                             <p class="hotel-card__rate-text">Рейтинг: <span>9,2</span></p>
                         </div>
@@ -262,7 +285,7 @@
                         <option value="4">4</option>
                         <option value="12">12</option>
                         <option value="24">24</option>
-                        <option value="48">48у</option>
+                        <option value="48">48</option>
                     </select>
                     <button class="visually-hidden" type="submit">Показать</button>
                 </form>
