@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+.welcome-section {
+  background-image: url("../images/welcome-bg.jpg");
+}
+
+.subscribe--bg {
+  background-image: url("../images/subscribe-bg.png");
+}
+
+/* страница каталога */
+
+.filter-section {
+  background-image: url("../images/catalog-bg.png");
+}
