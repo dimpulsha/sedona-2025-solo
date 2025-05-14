@@ -46,9 +46,9 @@
         </div>
 
     </header>
-    <main class="catalog-main page">
+    <main class="catalog page">
         <section class="section filter-section">
-            <h1>Гостиницы Седоны</h1>
+            <h1 class="page-head">Гостиницы Седоны</h1>
             <div class="breadcrumbs">
                 <ul class="breadcrumbs-list">
                     <li class="breadcrumbs-item">
@@ -67,14 +67,14 @@
                     <ul class="filter-group__list">
                         <li class="filter-group__item">
                             <label class="filter-control">
-                <input type="checkbox" name="pool" id="pool-id">
+                <input type="checkbox" name="pool" id="pool-id" checked>
                 <span class="filter-control__mark"></span>
                 <span class="filter-control__name">Бассейн</span>
               </label>
                         </li>
                         <li class="filter-group__item">
                             <label class="filter-control">
-                <input type="checkbox" name="parking" id="parking-id">
+                <input type="checkbox" name="parking" id="parking-id" checked>
                 <span class="filter-control__mark"></span>
                 <span class="filter-control__name">Парковка</span>
               </label>
@@ -93,7 +93,7 @@
                     <ul class="filter-group__list">
                         <li class="filter-group__item">
                             <label class="filter-control">
-                <input type="radio" name="housing-type" value="hotel">
+                <input type="radio" name="housing-type" value="hotel" checked>
                 <span class="filter-control__mark"></span>
                 <span class="filter-control__name">Гостиница</span>
               </label>
@@ -178,7 +178,7 @@
                         <p class="hotel-card__text">От 4000 ₽</p>
                     </div>
                     <div class="hotel-card__control">
-                        <a class="button hotel-card__button" href="">Подробнее</a>
+                        <a class="button hotel-card__button" href="#">Подробнее</a>
                         <button class="button hotel-card__button" type="button">В избранное</button>
                     </div>
                     <div class="hotel-card__rate">
@@ -200,7 +200,7 @@
                         <p class="hotel-card__text">От 3000 ₽</p>
                     </div>
                     <div class="hotel-card__control">
-                        <a class="button hotel-card__button" href="">Подробнее</a>
+                        <a class="button hotel-card__button" href="#">Подробнее</a>
                         <a class="button hotel-card__button" href="#">В избранное</a>
                     </div>
                     <div class="hotel-card__rate">
@@ -222,8 +222,8 @@
                         <p class="hotel-card__text">От 2000 ₽</p>
                     </div>
                     <div class="hotel-card__control">
-                        <a class="button hotel-card__button" href="">Подробнее</a>
-                        <a class="button hotel-card__button" href="#">В избранное</a>
+                        <a class="button hotel-card__button" href="#">Подробнее</a>
+                        <a class="button hotel-card__button button--accepted" href="#">В избранном</a>
                     </div>
                     <div class="hotel-card__rate">
                         <div class="hotel-card__stars">
@@ -244,7 +244,7 @@
                         <p class="hotel-card__text">От 3000 ₽</p>
                     </div>
                     <div class="hotel-card__control">
-                        <a class="button hotel-card__button" href="">Подробнее</a>
+                        <a class="button hotel-card__button" href="#">Подробнее</a>
                         <a class="button hotel-card__button" href="#">В избранное</a>
                     </div>
                     <div class="hotel-card__rate">
@@ -261,8 +261,8 @@
             <button class="button load" type="button">Загрузить ещё</button>
             <div class="pagination">
                 <ul class="pagination-list">
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">1</a>
+                    <li class="pagination-item pagination-item--current">
+                        <a class="pagination-link" >1</a>
                     </li>
                     <li class="pagination-item">
                         <a class="pagination-link" href="#">2</a>
@@ -283,7 +283,7 @@
             </div>
             <div class="pagination-control">
                 <form class="pagination-form">
-                    <label class="visually-hidden" for="page-quantity">Сортировка</label>
+                    <label class="visually-hidden" for="page-quantity">Гостиниц на странице</label>
                     <select class="sorting-control" id="page-quantity" name="page-quantity">
                         <option value="4">4</option>
                         <option value="12">12</option>
@@ -299,7 +299,10 @@
             <p class="page__text page__text--subgead">Подпишитесь на рассылку</p>
             <p class="page__text">Только полезная информация и никакого спама, честное бойскаутское! </p>
             <form class="subscribe-form">
+              <label class="subscribe-form__label">
+                <span class="visually-hidden">Введите ваш e-mail</span>
                 <input type="email" name="email" id="email-id" placeholder="Ваш e-mail">
+              </label>
                 <button class="button subscribe-form__button" type="submit">Подписаться</button>
             </form>
         </section>
