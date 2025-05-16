@@ -24,6 +24,10 @@
   list-style: none;
 }
 
+* p {
+  margin: 0;
+}
+
 * a {
   color: inherit;
   text-decoration: none;
@@ -69,7 +73,9 @@ body {
 /* button */
 
 .button {
-  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #83b3d3;
   font-weight: 700;
   font-size: 16px;
@@ -88,9 +94,6 @@ body {
 }
 
 .button--navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 160px;
   height: 37px;
   border-radius: 4px;
@@ -188,10 +191,11 @@ body {
   line-height: 26px;
   text-align: center;
   margin-right: auto;
+  margin-bottom: 10px;
   margin-left: auto;
 }
 
-.page__text--subgead {
+.page__text--subhead {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -300,19 +304,26 @@ body {
 /*Главная */
 
 .welcome-section {
+  min-height: 485px;
   background-image: url("../images/welcome-bg.jpg");
   background-repeat: no-repeat;
 }
 
-/* .advantages {
-  display: flex;
-  flex-direction: column;
-} */
+.section__welcome{
+  margin-bottom: 63px;
+}
 
-/* .advantages__text-wrapper {
-  width: 720px;
-  margin: 0 auto;
-} */
+.section__advandages {
+  margin-bottom: 91px;
+}
+
+.advantages__text-wrapper {
+  margin-bottom: 80px;
+}
+
+.advantages__subhead {
+  margin-bottom: 31px;
+}
 
 .advantages-head {
   font-weight: 700;
@@ -342,7 +353,7 @@ body {
   color: #ffffff;
 }
 
-.subscribe--bg .page__text--subgead {
+.subscribe--bg .page__text--subhead {
   color: #ffffff;
 }
 
