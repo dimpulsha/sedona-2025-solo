@@ -14,7 +14,7 @@
           <img class="header-logo__img site-logo" src="images/logo/logo-sedona.png" width="139" height="70" alt="Эмблема города Седона">
         </a>
       </div>
-      <nav class="navigation  page-header__navigation">
+      <nav class="navigation page-header__navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="navigation-item__link navigation-item__link--active" href="index.html">Главная</a>
@@ -308,12 +308,12 @@
                 <h2>Subscribe</h2>
                 <p class="page__text page__text--subhead">Подпишитесь на рассылку</p>
                 <p class="page__text">Только полезная информация и никакого спама, <br> честное бойскаутское! </p>
-                <form class="subscribe-form">
-                    <label class="subscribe-form__label">
-                <span class="visually-hidden">Введите ваш e-mail</span>
-                <input type="email" name="email" id="email-id" placeholder="Ваш e-mail">
-              </label>
-                    <button class="button subscribe-form__button" type="submit">Подписаться</button>
+                <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="subscribe-form__label">
+                    <span class="visually-hidden">Введите ваш e-mail</span>
+                    <input class="subscribe-form__input"  type="email" name="email" id="email-id" placeholder="Ваш e-mail">
+                  </label>
+                    <button class="button button--page subscribe-form__button" type="submit">Подписаться</button>
                 </form>
             </div>
         </section>

@@ -100,23 +100,25 @@
                 </li>
             </ul>
         </section>
-        <section class="section_">
+        <section class="main__search">
             <h2 class="visually-hidden">Hotel Search</h2>
+            <div class="search__text-wrapper">
             <p class="page__text page__text--subhead ">Заинтересовались?</p>
             <p class="page__text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
+            </div>
             <a class="button button--warm button--page button--hotel-search" href="#">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="section subscribe subscribe--bg">
-            <h2>Subscribe</h2>
+        <section class="main__subscribe subscribe subscribe--bg">
+            <h2 class="visually-hidden">Subscribe</h2>
             <p class="page__text page__text--subhead">Подпишитесь на рассылку</p>
             <p class="page__text">Только полезная информация и никакого спама, <br> честное бойскаутское! </p>
-            <form class="subscribe-form">
+            <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscribe-form__label">
                 <span class="visually-hidden">Введите ваш e-mail</span>
-                <input type="email" name="email" id="email-id" placeholder="Ваш e-mail">
+                <input class="subscribe-form__input"  type="email" name="email" id="email-id" placeholder="Ваш e-mail">
               </label>
-                <button class="button subscribe-form__button button--page" type="submit">Подписаться</button>
+                <button class="button button--page subscribe-form__button" type="submit">Подписаться</button>
             </form>
         </section>
     </main>
