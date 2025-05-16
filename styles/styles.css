@@ -105,11 +105,10 @@ body {
 }
 
 .button--hotel-search {
-  display: block;
   width: 575px;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
+  border-radius: 10px;
 }
 
 /* Header */
@@ -303,17 +302,17 @@ body {
 
 /*Главная */
 
-.welcome-section {
+.welcome {
   min-height: 485px;
   background-image: url("../images/welcome-bg.jpg");
   background-repeat: no-repeat;
 }
 
-.section__welcome{
+.main__welcome{
   margin-bottom: 63px;
 }
 
-.section__advandages {
+.main__advantages {
   margin-bottom: 91px;
 }
 
@@ -325,7 +324,7 @@ body {
   margin-bottom: 31px;
 }
 
-.advantages-head {
+.advantages-item__head {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
