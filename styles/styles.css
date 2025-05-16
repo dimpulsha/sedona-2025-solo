@@ -74,13 +74,13 @@ body {
 /* button */
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   font-family: inherit;
   line-height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #83b3d3;
   color: #ffffff;
   text-transform: uppercase;
@@ -152,21 +152,19 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #000000;
-  outline: solid 1px green;
 }
 
 .user-navigation {
-  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   min-width: 264px;
+  margin-left: auto;
 }
 
 .user-navigation__link {
   display: block;
   padding: 23px 11px 24px;
-  outline: solid 1px green;
 }
 
 .user-navigation__button {
@@ -267,10 +265,10 @@ body {
 /* Карточка гостиницы*/
 
 .hotel-card {
-  width: 340px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 340px;
+  padding: 20px
 }
 
 .hotel-card__title {
@@ -514,7 +512,3 @@ body {
 .sorting-control {
   margin-left: 51px;
 }
-
-/* .pagination-link {
-
-} */
