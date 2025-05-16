@@ -8,45 +8,40 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="header-logo">
-            <a class="header-logo__link" href="index.html">
-                <img class="header-logo__img site-logo" src="images/logo/logo-sedona.png" width="139" height="70" alt="Эмблема города Седона">
-            </a>
-        </div>
-        <nav class="navigation">
+  <header class="page-header">
+    <div class="page-header__logo header-logo">
+        <a class="header-logo__link" href="index.html">
+          <img class="header-logo__img site-logo" src="images/logo/logo-sedona.png" width="139" height="70" alt="Эмблема города Седона">
+        </a>
+      </div>
+      <nav class="navigation  page-header__navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a class="navigation-item__link" href="index.html">Главная</a>
+                    <a class="navigation-item__link navigation-item__link--active" href="index.html">Главная</a>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-item__link" href="#">О Седоне</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-item__link navigation-item__link--active">Гостиницы</a>
+                    <a class="navigation-item__link">Гостиницы</a>
                 </li>
             </ul>
-
         </nav>
-
-        <!-- <div class="user-navigation"> -->
         <ul class="user-navigation">
             <li class="user-navigation__item">
-                <a href="#"><span class="visually-hidden">Поиск</span></a>
+                <a class="user-navigation__link" href="#"><span class="visually-hidden">Поиск</span></a>
             </li>
-            <li>
-                <a href="#">
-                    <span class="visually-hidden">Избранное</span>
-                    <span class="icon-button-counter">12</span>
+            <li class="user-navigation__item">
+                <a class="user-navigation__link" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                  <span class="user-navigation__counter">12</span>
                 </a>
             </li>
-            <li>
-                <a class="user-navigation__button button button--warm" href="#">Хочу сюда</a>
+            <li class="user-navigation__item">
+                <a class="button button--warm button--navigation user-navigation__button" href="#">Хочу сюда</a>
             </li>
         </ul>
-        <!-- </div> -->
-
-    </header>
+</header>
     <main class="catalog page">
         <section class="section filter-section">
             <div class="section__wrapper">

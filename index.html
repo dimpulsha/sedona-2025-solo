@@ -9,12 +9,12 @@
 
 <body>
     <header class="page-header">
-        <div class="header-logo">
+        <div class="page-header__logo header-logo">
             <a class="header-logo__link">
               <img class="header-logo__img site-logo" src="images/logo/logo-sedona.png" width="139" height="70" alt="Эмблема города Седона">
             </a>
           </div>
-          <nav class="navigation">
+          <nav class="navigation  page-header__navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
                         <a class="navigation-item__link navigation-item__link--active">Главная</a>
@@ -27,23 +27,20 @@
                     </li>
                 </ul>
             </nav>
-        <!-- <div class="user-navigation"> -->
             <ul class="user-navigation">
                 <li class="user-navigation__item">
-                    <a href="#"><span class="visually-hidden">Поиск</span></a>
+                    <a class="user-navigation__link" href="#"><span class="visually-hidden">Поиск</span></a>
                 </li>
                 <li class="user-navigation__item">
-                    <a href="#">
+                    <a class="user-navigation__link" href="#">
                       <span class="visually-hidden">Избранное</span>
-                      <span class="icon-button-counter">12</span>
+                      <span class="user-navigation__counter">12</span>
                     </a>
                 </li>
-                <li class="user-navigation__item ">
-                    <a class=" button button--warm" href="#">Хочу сюда</a>
+                <li class="user-navigation__item">
+                    <a class="button button--warm button--navigation user-navigation__button" href="#">Хочу сюда</a>
                 </li>
             </ul>
-        <!-- </div> -->
-
     </header>
     <main class="page main">
         <section class="section welcome-section">
