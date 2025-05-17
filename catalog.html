@@ -43,9 +43,9 @@
         </ul>
     </header>
     <main class="page">
-        <section class="filter page__filter">
+        <section class="filter-section page__filter">
             <!-- класс у враппера заменить -->
-            <div class="section__wrapper">
+            <div class="section-wrapper">
                 <h1 class="page-head">Гостиницы Седоны</h1>
                 <!-- <div class="breadcrumbs"> -->
                 <ul class="breadcrumbs filter-section__breadcrumbs">
@@ -138,45 +138,41 @@
         </section>
 
         <section class="page__search-result search-result">
-            <!-- класс у враппера -->
-            <div class="section__wrapper">
+            <div class="section-wrapper">
                 <h2 class="visually-hidden">Результаты поиска</h2>
-                <div class="search-result__control-wrapper">
-                    <p class="page__text page__text--subhead page__text--left">Найдено гостиниц: <span>38</span></p>
+
+<!-- search-result__control не решил - флекс или грид. решить на следующем прогоне -->
+                <div class="search-result__control">
+                    <p class="page__text page__text--subhead page__text--search-result">Найдено гостиниц: <span>38</span></p>
                     <form class="sorting-form">
-                        <label class="visually-hidden" for="sort">Сортировка
+                        <label class="visually-hidden" for="sort">Сортировка</label>
                 <select class="sorting-control" id="sort" name="sort">
-          <option value="cheap">Сначала дешёвые</option>
+          <option value="cheap" selected >Сначала дешёвые</option>
           <option value="popular">Сначала дорогие</option>
           <option value="expensive">По количеству звезд</option>
           <option value="popular">По рейтингу</option>
 
         </select>
-      </label>
+
                         <button class="visually-hidden" type="submit">Сортировать</button>
                     </form>
-                    <div class="view-toggler">
-                        <ul>
-                            <li>
-                                <a href="#"><span class="visually-hidden">Показать в виде карточек</span></a>
+                        <ul class="view-toggler">
+                            <li class="view-toggler__item">
+                                <a class=view-toggler__link href="#"><span class="visually-hidden">Показать в виде карточек</span></a>
                             </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="#"><span class="visually-hidden">Показать расширенную информацию</span></a>
+                            <li class="view-toggler__item">
+                                <a href="#"><span class="visually-hidden">Показать в виде слайда</span></a>
                             </li>
-                        </ul>
-                        <ul>
-                            <li>
+                            <li class="view-toggler__item">
                                 <a href="#"><span class="visually-hidden">Показать в виде списка</span></a>
                             </li>
                         </ul>
-                    </div>
                 </div>
-                <section class="section hotel-list">
+                <section class="search-result__hotel-list hotel-list">
                     <div class="hotel-card">
-
-                        <h3 class="hotel-card__title">Amara Resort & Spa</h3>
+                        <h3 class="hotel-card__title">
+                          <a href="#">Amara Resort & Spa</a>
+                        </h3>
                         <a class="hotel-card__link" href="#">
                             <img class="hotel-card__img" src="images/arma.jpg" width="300" height="206" alt="вид из окна гостиницы">
                         </a>
@@ -185,21 +181,23 @@
                             <p class="hotel-card__text hotel-card__price">От 4000 ₽</p>
                         </div>
                         <div class="hotel-card__control">
-                            <a class="button hotel-card__button-details button--warm " href="#">Подробнее</a>
-                            <a class="button hotel-card__button-favorite" href="#">В избранное</a>
+                            <a class="button button--hotel-card-details button--warm " href="#">Подробнее</a>
+                            <a class="button button--hotel-card-favorite" href="#">В избранное</a>
                         </div>
                         <div class="hotel-card__rate">
                             <div class="hotel-card__stars">
                                 <p class="visually-hidden">4 звезды</p>
                             </div>
                             <div class="hotel-card__rate-value">
-                                <p class="hotel-card__rate-text">Рейтинг: <span>8,5</span></p>
+                                <p>Рейтинг: <span>8,5</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="hotel-card">
 
-                        <h3 class="hotel-card__title">Desert Quail Inn</h3>
+                        <h3 class="hotel-card__title">
+                          <a href="#">Desert Quail Inn</a>
+                        </h3>
                         <a class="hotel-card__link" href="#">
                             <img class="hotel-card__img" src="images/desert.jpg" width="300" height="206" alt="вид из окна гостиницы">
                         </a>
@@ -208,21 +206,22 @@
                             <p class="hotel-card__text hotel-card__price">От 3000 ₽</p>
                         </div>
                         <div class="hotel-card__control">
-                            <a class="button hotel-card__button-details button--warm " href="#">Подробнее</a>
-                            <a class="button hotel-card__button-favorite" href="#">В избранное</a>
+                            <a class="button button--hotel-card-details button--warm" href="#">Подробнее</a>
+                            <a class="button button--hotel-card-favorite" href="#">В избранное</a>
                         </div>
                         <div class="hotel-card__rate">
                             <div class="hotel-card__stars">
                                 <p class="visually-hidden">4 звезды</p>
                             </div>
                             <div class="hotel-card__rate-value">
-                                <p class="hotel-card__rate-text">Рейтинг: <span>8,9</span></p>
+                                <p>Рейтинг: <span>8,9</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="hotel-card">
 
-                        <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
+                        <h3 class="hotel-card__title">
+                          <a href="#">Villas at Poco Diablo</a></h3>
                         <a class="hotel-card__link" href="#">
                             <img class="hotel-card__img" src="images/villas.jpg" width="300" height="206" alt="вид из окна гостиницы">
                         </a>
@@ -231,21 +230,23 @@
                             <p class="hotel-card__text hotel-card__price">От 2000 ₽</p>
                         </div>
                         <div class="hotel-card__control">
-                            <a class="button hotel-card__button-details button--warm " href="#">Подробнее</a>
-                            <a class="button hotel-card__button-favorite button--accepted" href="#">В избранном</a>
+                            <a class="button button--hotel-card-details button--warm " href="#">Подробнее</a>
+                            <a class="button button--hotel-card-favorite button--accepted" href="#">В избранном</a>
                         </div>
                         <div class="hotel-card__rate">
                             <div class="hotel-card__stars">
                                 <p class="visually-hidden">4 звезды</p>
                             </div>
                             <div class="hotel-card__rate-value">
-                                <p class="hotel-card__rate-text">Рейтинг: <span>9,2</span></p>
+                                <p>Рейтинг: <span>9,2</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="hotel-card">
 
-                        <h3 class="hotel-card__title">GreenTree Inn</h3>
+                        <h3 class="hotel-card__title">
+                          <a href="#">GreenTree Inn</a>
+                        </h3>
                         <a class="hotel-card__link" href="#">
                             <img class="hotel-card__img" src="images/green.jpg" width="300" height="206" alt="вид из окна гостиницы">
                         </a>
@@ -254,49 +255,48 @@
                             <p class="hotel-card__text hotel-card__price">От 3000 ₽</p>
                         </div>
                         <div class="hotel-card__control">
-                            <a class="button hotel-card__button-details button--warm " href="#">Подробнее</a>
-                            <a class="button hotel-card__button-favorite" href="#">В избранное</a>
+                            <a class="button button--hotel-card-details button--warm " href="#">Подробнее</a>
+                            <a class="button button--hotel-card-favorite" href="#">В избранное</a>
                         </div>
                         <div class="hotel-card__rate">
                             <div class="hotel-card__stars">
                                 <p class="visually-hidden">4 звезды</p>
                             </div>
                             <div class="hotel-card__rate-value">
-                                <p class="hotel-card__rate-text">Рейтинг: <span>9,2</span></p>
+                                <p>Рейтинг: <span>9,2</span></p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <!-- <div> -->
-                <button class="button load-button" type="button">Загрузить ещё</button>
-                <!-- </div> -->
+                 <div class="search-result__load">
+                   <button class="button button--load-result button--page" type="button">Загрузить ещё</button>
+                </div>
                 <div class="pagination-wraqpper">
                     <!-- <div class="pagination"> -->
-                    <!-- классы переделать -->
-                    <ul class="pagination-list">
-                        <li class="pagination-item pagination-item--current">
-                            <a class="pagination-link">1</a>
+                    <ul class="pagination">
+                        <li class="pagination__item pagination__item--current">
+                            <a class="pagination__link">1</a>
                         </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">2</a>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">2</a>
                         </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">3</a>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">3</a>
                         </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">4</a>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">4</a>
                         </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">...</a>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">...</a>
                         </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">10</a>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">10</a>
                         </li>
                     </ul>
                     <!-- </div> -->
                     <div class="pagination-control">
                         <form class="pagination-form">
-                            <label class="visually-hidden" for="page-quantity">Гостиниц на странице
+                            <label class="visually-hidden" for="page-quantity">Гостиниц на странице</label>
                             <select class="sorting-control" id="page-quantity" name="page-quantity">
                         <option value="4">4</option>
                         <option value="12">12</option>
@@ -304,7 +304,7 @@
                         <option value="48">48</option>
 
                     </select>
-                  </label>
+
                             <button class="visually-hidden" type="submit">Показать</button>
                         </form>
                     </div>
@@ -313,10 +313,10 @@
         </section>
 
         <!-- подписку - как на основной странице, без враппера -->
-        <section class="page__subscribe subscribe">
+        <section class="page__subscribe subscribe page__subscribe--inner">
             <!-- класс у враппера -->
-            <div class="section__wrapper">
-                <h2>Subscribe</h2>
+            <!-- <div class="section__wrapper"> -->
+                <h2 class="visually-hidden">Subscribe</h2>
                 <p class="page__text page__text--subhead">Подпишитесь на рассылку</p>
                 <p class="page__text">Только полезная информация и никакого спама, <br> честное бойскаутское! </p>
                 <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -326,7 +326,7 @@
                   </label>
                     <button class="button button--page subscribe-form__button" type="submit">Подписаться</button>
                 </form>
-            </div>
+            <!-- </div> -->
         </section>
 
     </main>
