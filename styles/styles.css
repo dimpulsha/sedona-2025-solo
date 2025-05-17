@@ -168,7 +168,7 @@ body {
 }
 
 .user-navigation__button {
- margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* Section */
@@ -181,6 +181,7 @@ body {
 /* Text */
 
 .page-head {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
 }
@@ -252,13 +253,15 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 26px;
 }
 
-.breadcrumbs-item {
+/* .breadcrumbs__item {
   margin-right: 26px;
-}
+} */
 
-.breadcrumbs-link {
+.breadcrumbs__link {
+  display: block;
   font-size: 16px;
 }
 
@@ -268,7 +271,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 340px;
-  padding: 20px
+  padding: 20px;
 }
 
 .hotel-card__title {
@@ -326,11 +329,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.main__welcome{
+.page__welcome {
   margin-bottom: 63px;
 }
 
-.main__advantages {
+.page__advantages {
   margin-bottom: 91px;
 }
 
@@ -363,7 +366,7 @@ body {
   color: #ffffff;
 }
 
-.main__search {
+.page__search {
   margin-bottom: 93px;
 }
 
@@ -420,10 +423,16 @@ body {
 } */
 
 .filter-section {
+  padding-top: 35px;
+  padding-bottom: 81px;
   background-color: #83b3d3;
   background-image: url("../images/catalog-bg.png");
   background-repeat: no-repeat;
   color: #ffffff;
+}
+
+.filter-section__breadcrumbs {
+  margin-bottom: 45px;
 }
 
 .filter {
@@ -432,6 +441,14 @@ body {
 
 .filter__group {
   width: 217px;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-group__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .filter__group--price {
@@ -439,16 +456,29 @@ body {
   margin-left: auto;
 }
 
+/* .filter_price-wrapper {
+  display: flex;
+}
+
+.filter-control--price {
+  width: 143px;
+  padding: 14px 13px 11px 19px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.filter-control__input {
+  /* display: block; */
+  /* width: 90px;
+
+  border: none;
+} */
+
 .filter__controls {
   display: flex;
   flex-direction: column;
   min-width: 160px;
   margin-left: 81px;
-}
-
-.filter-group__title {
-  font-weight: 700;
-  font-size: 20px;
 }
 
 .search-result__control-wrapper {

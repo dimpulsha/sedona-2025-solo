@@ -8,13 +8,13 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__logo header-logo">
-        <a class="header-logo__link" href="index.html">
-          <img class="header-logo__img site-logo" src="images/logo/logo-sedona.png" width="139" height="70" alt="Эмблема города Седона">
-        </a>
-      </div>
-      <nav class="navigation page-header__navigation">
+    <header class="page-header">
+        <div class="page-header__logo header-logo">
+            <a class="header-logo__link" href="index.html">
+                <img class="header-logo__img site-logo" src="images/logo/logo-sedona.png" width="139" height="70" alt="Эмблема города Седона">
+            </a>
+        </div>
+        <nav class="navigation page-header__navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="navigation-item__link navigation-item__link--active" href="index.html">Главная</a>
@@ -33,33 +33,34 @@
             </li>
             <li class="user-navigation__item">
                 <a class="user-navigation__link" href="#">
-                  <span class="visually-hidden">Избранное</span>
-                  <span class="user-navigation__counter">12</span>
+                    <span class="visually-hidden">Избранное</span>
+                    <span class="user-navigation__counter">12</span>
                 </a>
             </li>
             <li class="user-navigation__item">
                 <a class="button button--warm button--navigation user-navigation__button" href="#">Хочу сюда</a>
             </li>
         </ul>
-</header>
-    <main class="catalog page">
-        <section class="section filter-section">
+    </header>
+    <main class="page">
+        <section class="filter page__filter">
+            <!-- класс у враппера заменить -->
             <div class="section__wrapper">
                 <h1 class="page-head">Гостиницы Седоны</h1>
                 <!-- <div class="breadcrumbs"> -->
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs-item">
-                        <a class="breadcrumbs-link breadcrumbs-link--home" href="index.html"><span class="visually-hidden">Главная</span></a>
+                <ul class="breadcrumbs filter-section__breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link breadcrumbs__link--home" href="index.html"><span class="visually-hidden">Главная</span></a>
                     </li>
-                    <li class="breadcrumbs-item">
-                        <a class="breadcrumbs-link breadcrumbs-link--current">Гостиницы</a>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link breadcrumbs-link--current">Гостиницы</a>
                     </li>
                 </ul>
                 <!-- </div> -->
 
                 <h2 class="visually-hidden">Выбор параметров поиска</h2>
                 <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-                    <fieldset class="filter__group ">
+                    <fieldset class="filter__group">
                         <legend class="filter-group__title">Инфраструктура:</legend>
                         <ul class="filter-group__list">
                             <li class="filter-group__item">
@@ -112,13 +113,15 @@
                         </ul>
                     </fieldset>
                     <fieldset class="filter__group filter__group--price">
-                        <legend class="filter-group__title">Стоимость, ₽:</legend>
-                        <label class="filter-control">
-            <input class="filter-control__input" type="number" name="minprice" id="minprice-id">от
+                        <legend class="filter-group__title">Стоимость, ₽: </legend>
+                        <div class="filter_price-wrapper">
+                            <label class="filter-control filter-control--price">
+            <input class="filter-control__input" type="text" name="minprice" id="minprice-id" value="0">от
           </label>
-                        <label class="filter-control">
-            <input class="filter-control__input" type="number" name="minprice" id="minprice-id">до
+                            <label class="filter-control filter-control--price">
+            <input class="filter-control__input" type="text" name="maxprice" id="maxprice-id" value="9000">до
           </label>
+                        </div>
                         <button class="filter-control__range-toggle min-toggle" type="button">
             <span class="visually-hidden">изменить минимальную цену</span>
           </button>
@@ -134,7 +137,8 @@
             </div>
         </section>
 
-        <section class="section search-result">
+        <section class="page__search-result search-result">
+            <!-- класс у враппера -->
             <div class="section__wrapper">
                 <h2 class="visually-hidden">Результаты поиска</h2>
                 <div class="search-result__control-wrapper">
@@ -171,10 +175,11 @@
                 </div>
                 <section class="section hotel-list">
                     <div class="hotel-card">
+
+                        <h3 class="hotel-card__title">Amara Resort & Spa</h3>
                         <a class="hotel-card__link" href="#">
                             <img class="hotel-card__img" src="images/arma.jpg" width="300" height="206" alt="вид из окна гостиницы">
                         </a>
-                        <h3 class="hotel-card__title">Amara Resort & Spa</h3>
                         <div class="hotel-card__details">
                             <p class="hotel-card__text hotel-card__type">Гостиница</p>
                             <p class="hotel-card__text hotel-card__price">От 4000 ₽</p>
@@ -193,10 +198,11 @@
                         </div>
                     </div>
                     <div class="hotel-card">
+
+                        <h3 class="hotel-card__title">Desert Quail Inn</h3>
                         <a class="hotel-card__link" href="#">
                             <img class="hotel-card__img" src="images/desert.jpg" width="300" height="206" alt="вид из окна гостиницы">
                         </a>
-                        <h3 class="hotel-card__title">Desert Quail Inn</h3>
                         <div class="hotel-card__details">
                             <p class="hotel-card__text hotel-card__type">Гостиница</p>
                             <p class="hotel-card__text hotel-card__price">От 3000 ₽</p>
@@ -215,10 +221,11 @@
                         </div>
                     </div>
                     <div class="hotel-card">
+
+                        <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
                         <a class="hotel-card__link" href="#">
                             <img class="hotel-card__img" src="images/villas.jpg" width="300" height="206" alt="вид из окна гостиницы">
                         </a>
-                        <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
                         <div class="hotel-card__details">
                             <p class="hotel-card__text hotel-card__type">Гостиница</p>
                             <p class="hotel-card__text hotel-card__price">От 2000 ₽</p>
@@ -237,10 +244,11 @@
                         </div>
                     </div>
                     <div class="hotel-card">
+
+                        <h3 class="hotel-card__title">GreenTree Inn</h3>
                         <a class="hotel-card__link" href="#">
                             <img class="hotel-card__img" src="images/green.jpg" width="300" height="206" alt="вид из окна гостиницы">
                         </a>
-                        <h3 class="hotel-card__title">GreenTree Inn</h3>
                         <div class="hotel-card__details">
                             <p class="hotel-card__text hotel-card__type">Гостиница</p>
                             <p class="hotel-card__text hotel-card__price">От 3000 ₽</p>
@@ -259,12 +267,12 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- <div> -->
                 <button class="button load-button" type="button">Загрузить ещё</button>
                 <!-- </div> -->
                 <div class="pagination-wraqpper">
                     <!-- <div class="pagination"> -->
+                    <!-- классы переделать -->
                     <ul class="pagination-list">
                         <li class="pagination-item pagination-item--current">
                             <a class="pagination-link">1</a>
@@ -303,13 +311,16 @@
                 </div>
             </div>
         </section>
-        <section class="subscribe">
+
+        <!-- подписку - как на основной странице, без враппера -->
+        <section class="page__subscribe subscribe">
+            <!-- класс у враппера -->
             <div class="section__wrapper">
                 <h2>Subscribe</h2>
                 <p class="page__text page__text--subhead">Подпишитесь на рассылку</p>
                 <p class="page__text">Только полезная информация и никакого спама, <br> честное бойскаутское! </p>
                 <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label class="subscribe-form__label">
+                    <label class="subscribe-form__label">
                     <span class="visually-hidden">Введите ваш e-mail</span>
                     <input class="subscribe-form__input"  type="email" name="email" id="email-id" placeholder="Ваш e-mail">
                   </label>
