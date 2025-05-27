@@ -138,20 +138,24 @@ body {
   border-radius: 4px;
 }
 
-
 /* Header */
 
 .page-header {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: max-content minmax(355px, max-content) minmax(max-content, 1fr) max-content;
+  gap: 20px;
   width: 1060px;
+  min-height: 65px;
   margin: 0 auto;
-  align-items: center;
+  z-index: 1;
+  /* align-items: center; */
 }
-
+/*
 .page-header__logo {
   margin-right: 30px;
   min-height: 70px;
-}
+} */
 
 /* .header-logo {
   min-width: 139px;
@@ -162,12 +166,10 @@ body {
 } */
 
 .header-logo {
- z-index: 1;
-   /* margin-bottom: -5px; */
+  /* margin-bottom: -5px; */
   display: block;
   min-width: 139px;
   height: 100%;
-
 }
 
 .header-logo__img {
@@ -179,19 +181,22 @@ body {
   align-items: center;
   align-self: flex-start;
   min-height: 65px;*/
-  /* margin-bottom: 10px;
+/* margin-bottom: 10px;
 } */
 
 .page-header__navigation {
-  margin-right: 42px;
+  /* margin-right: 42px; */
+  margin-left: 10px;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 5px;
 }
 
 .navigation-item__link {
+  position: relative;
   display: block;
   padding: 20px 17px;
   font-weight: 700;
@@ -200,17 +205,41 @@ body {
   color: #000000;
 }
 
-.user-navigation-wrapper {
+.navigation-item__link:hover {
+  color: #756257;
+}
+
+.navigation-item__link:focus {
+  outline: 2px solid #83b3d3;
+}
+
+.navigation-item__link:active {
+  color: #756257;
+  opacity: 0.3;
+  outline: none;
+}
+
+.navigation-item__link--active::before {
+  position: absolute;
+  right: 17px;
+  bottom: 0;
+  left: 17px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
+/* .user-navigation-wrapper {
   display: flex;
-  gap:20px;
+  gap: 20px;
   align-self: flex-start;
-  /* align-items: center; */
+  align-items: center;
   margin-left: auto;
   min-width: 344px;
-  /* max-width: 460px; */
-  padding-top: 13px;
-  padding-bottom: 19px;
-}
+  max-width: 460px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+} */
 
 .user-navigation {
   /* align-self: flex-start; */
@@ -222,19 +251,71 @@ body {
   max-width: 320px;
 }
 
+/* .page-header__user-navigation {
+  margin-left: auto;
+} */
+
 .user-navigation__item:nth-child(1) {
   margin-left: auto;
 }
 
 .user-navigation__link {
+  position: relative;
   display: block;
-  padding: 0 11px;
+  padding: 21px 12px 22px 11px;
+}
+
+.user-navigation__link:hover .user-navigation__icon {
+  fill: #756257;
+}
+
+.user-navigation__link:active .user-navigation__icon {
+  fill: #756257;
+  opacity: 0.3;
+}
+
+.user-navigation__link:active .user-navigation__counter {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-navigation__counter{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  left: 24px;
+  border-radius: 50%;
+  background-color: #7db550;
+  font-size: 10px;
+  color: #ffffff;
 }
 
 .user-navigation__button {
+  margin-top: 14px;
+  /* justify-self: center; */
   /* margin-left: 20px; */
-  align-self: flex-start
+  /* align-self: center; */
+  /* margin-bottom: 3px; */
 }
+
+.user-navigation__button:hover {
+  background-color: #615048;
+}
+
+.user-navigation__button:focus {
+  background-color: #615048;
+  outline: 3px solid #83b3d3;
+}
+
+.user-navigation__button:active {
+  background-color: #615048;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 /* Section */
 
@@ -397,7 +478,7 @@ body {
 }
 
 .page__welcome {
-  margin-top: -5px;
+  margin-top: -6px;
   margin-bottom: 63px;
 }
 
@@ -413,7 +494,7 @@ body {
   margin-bottom: 31px;
 }
 
-.advantages-list{
+.advantages-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
 }
@@ -579,7 +660,7 @@ body {
 
 .filter-control__input {
   /* display: block; */
-  /* width: 90px;
+/* width: 90px;
 
   border: none;
 } */
@@ -591,7 +672,7 @@ body {
   margin-left: 81px;
 }
 
-.page__search-result{
+.page__search-result {
   margin-bottom: 73px;
 }
 
@@ -601,7 +682,7 @@ body {
   margin-bottom: 53px;
 }
 
-.search-result__hotel-list{
+.search-result__hotel-list {
   margin-bottom: 34px;
 }
 
